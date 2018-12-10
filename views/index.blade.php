@@ -1,0 +1,1 @@
+<h1>Hello there Mr. {{ $variable }}</h1>

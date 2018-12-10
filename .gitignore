@@ -1,0 +1,4 @@
+/logs/*
+/tests
+/profilepics/*
+!/logs/README.md
