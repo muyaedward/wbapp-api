@@ -1,4 +1,4 @@
-@component('emails.components.message', ['template' => $emailtemplate])
+@component('emails.components.message', ['template' => $template])
 <h1>Dear {{ $name }},</h1>
 
 <p>You have been assigned to complete order <a href="#"><b>#34243</b></a>.</p>

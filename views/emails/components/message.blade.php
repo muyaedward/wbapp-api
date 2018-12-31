@@ -1,11 +1,8 @@
-@component('emails.components.layout', ['template' => $template])
+@component('emails.components.layout', ['emailtemplate' => 'yellow'])
     {{-- Header --}}
     @slot('header')
-        @component('emails.components.header', [
-            'url' => '#',
-            'logourl' => 'https://www.writersbayapp.com/img/logo.png'
-            ])
-            WritersBay App
+        @component('emails.components.header', ['template' => $template])
+            {{ $template['appname'] }}
         @endcomponent
     @endslot
     {{-- Body --}}
@@ -23,7 +20,7 @@
     {{-- Footer --}}
     @slot('footer')
         @component('emails.components.footer')
-            &copy; {{ date('Y') }} WritersBay App. All rights reserved.
+            &copy; {{ date('Y') }} {{ $template['appname'] }}. All rights reserved.
         @endcomponent
     @endslot
 @endcomponent

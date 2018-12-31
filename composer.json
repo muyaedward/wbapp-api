@@ -15,17 +15,19 @@
         "php": ">=5.5.0",
         "slim/slim": "^3.1",
         "slim/php-view": "^2.0",
-        "monolog/monolog": "^1.17",
-        "wanfeiyy/dd": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
         "swiftmailer/swiftmailer": "^6.0",
         "php-http/curl-client": "^1.7",
         "guzzlehttp/psr7": "^1.4",
         "duncan3dc/blade": "^4.2",
-        "davidepastore/slim-validation": "^0.5.1"
+        "davidepastore/slim-validation": "^0.5.1",
+        "vlucas/phpdotenv": "^2.5",
+        "tijsverkoyen/css-to-inline-styles": "^2.2"
     },
     "require-dev": {
-        "phpunit/phpunit": ">=4.8 < 6.0"
+        "phpunit/phpunit": ">=4.8 < 6.0",
+        "wanfeiyy/dd": "^1.0",
+        "monolog/monolog": "^1.17"
     },
     "autoload": {
         "psr-4": {

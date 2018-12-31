@@ -8,9 +8,9 @@
 
 <tr>
     <td class="header">
-        <a align="center" href="{{ $url }}">
-            @if($logourl != '' || $logourl != null)
-                <img src="{{ $logourl ?? '' }}" width="400px" alt="{{ $slot }}" class="img-responsive">
+        <a align="center" href="{{ $template['url'] }}">
+            @if($template['logo'] !== null || $template['logo'] !== '')
+                <img src="{{ $template['logo'] }}" width="400px" alt="{{ $slot }}" class="img-responsive">
             @else
                 <h1 align="center" style="font-size: 24px;">{{ $slot }}</h1>
             @endif
